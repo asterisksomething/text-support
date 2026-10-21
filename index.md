@@ -6,21 +6,23 @@ description: Quick Notes — Capture Anything, Anywhere
 
 # Support
 
-**Quick Notes — Capture Anything, Anywhere**
+### Need help with *TXT? You're in the right place.
 
-## Need help with *TXT? You're in the right place.
-
-*TXT is said "asterisk text."
+*TXT is pronounced "asterisk text."
 
 ## Frequently Asked Questions
 
 ### Getting Started
 
+### Is there a guide in the app?
+
+Yes. The first time you open *TXT, a short welcome shows the basics, and your library starts with a **Getting Started** note next to your pinned note: how to move around, the pinned note, the keyboard bar, Markdown and plain text, and where your files live. Delete it whenever you like; it won't come back.
+
 ### How do I make a new note?
 
 *TXT opens to a new note, ready to type. You can also:
 
-- Type in **Search or Create** at the top and press Return: if no note has that title, a new one starts with it.
+- Type in **Search or Create** at the top and press Return: if no note has that title, a new one starts with it, with the cursor ready on the line below the title.
 - While searching, tap **+** (or press Option-Return on a keyboard) to always start a new note with exactly what you typed.
 - Pull down from the top of a note and hold to start a new one.
 - Use a widget, Control Center, Siri, the Share sheet, or your Apple Watch.
@@ -35,7 +37,7 @@ That's the *TXT mark, standing in for your first word. It disappears as soon as 
 
 ### How do I move between notes?
 
-Swipe left or right on a note, or tap the dots at the top. Notes are in order of when they were last changed, newest first, across all your folders. Your pinned note has its own button.
+Swipe left or right on a note, or tap the dots at the top. You'll feel a light tap as you move to another note, and a firmer bump at the first or last one. Notes are newest first, across all your folders, when *TXT opens; while you're using it, they keep their places, so editing a note (or a change from another device) doesn't shuffle the dots. Your pinned note has its own button.
 
 ### Is it like Notational Velocity?
 
@@ -57,7 +59,7 @@ To find something inside the note you're reading, use the search button in the k
 
 ### Can I find notes with Spotlight?
 
-Yes, with **Show in Spotlight** on in Settings. Turning it off removes your notes from Spotlight.
+Yes. Your notes appear in Spotlight automatically. To hide them, turn off *TXT in your device's search settings (on iPhone and iPad, Settings ▸ Apps ▸ *TXT ▸ Search).
 
 ### Writing
 
@@ -66,6 +68,11 @@ Yes, with **Show in Spotlight** on in Settings. Turning it off removes your note
 Notes are Markdown, shown as rich text while you write. Headings, **bold**, *italic*, __underline__, checklists, bullet and numbered lists, tables, dividers, links and pictures all work. Use **Plain Text** in the ••• menu to see and edit the Markdown itself.
 
 To type a literal `*` or `#` without it becoming formatting, put a backslash before it (`\*`).
+
+### How do indents and dividers work?
+
+- **Indent** and **Outdent** (in the keyboard bar's Action Drawer, under Lists) move a line in or out by a tab. One backspace removes an indent. How far a tab goes is set by **Tab Width** (see _Can I change how notes look?_). Indented lists become nested lists.
+- **Divider** adds a line across the note. Choose its look in **Settings → Keyboard Actions → Divider**: **Line** (`---`), **Light Line** (`___`), or **Dotted** (`***`). All three are standard Markdown, so other apps show them as dividers too.
 
 ### How do I rename a note?
 
@@ -78,7 +85,7 @@ A note's title is its first line. To rename it, edit that line, or open **Note I
 
 ### What is the pinned note?
 
-One note you always come back to, like a shopping list. It has its own button above your notes (bright while you're in it) and shows on your Apple Watch. Its title is hidden while you write so it can't be changed by accident; rename it in **Note Info**. Choose it in **Settings → Pinned Note**, where you can also choose what happens to its text when you save it as a new note: keep it, clear it, or ask every time.
+One note you always come back to, like a shopping list. It has its own push-pin button above your notes (bright while you're in it), is marked with a 📌 in search, and shows on your Apple Watch. Its title is hidden while you write so it can't be changed by accident; rename it in **Note Info**. Choose it in **Settings → Pinned Note**, where you can also choose what happens to its text when you save it as a new note: keep it, clear it, or ask every time.
 
 ### Can I use templates?
 
@@ -98,11 +105,17 @@ Yes. Add `#calc` to a note, or tap **Calculations** on the keyboard, and answers
 
 ### Can I change how notes look?
 
-Yes. **Settings → Fonts & Themes** has fonts, text size, and paper styles (Plain, Dots, Graph, Ruled). **Appearance**, **Accent Color**, and **App Icon** are in Settings too.
+Yes. **Settings → Fonts & Themes** has fonts, text size, paper styles (Plain, Dots, Graph, Ruled), and:
+
+- **Line Spacing**: Standard, or up to double (+20%, +40%, +60%, +80%, 2×).
+- **Tab Width**: Half, Standard, x1.5, or Double. It's also how far **Indent** moves a line.
+- **Editor Margins**: Standard (the full width), Small, Medium, or Large. Margins keep the text in a centered column on an iPad or a wide Mac window, and narrow along with the window; windows as narrow as an iPhone always use the full width.
+
+The preview at the top shows each change before you save it. **Appearance**, **Accent Color**, and **App Icon** are in Settings too, and **Settings → Counts** chooses which counts (characters, words, lines) show above a note.
 
 ### Can I change the buttons above the keyboard?
 
-Yes, in **Settings → Keyboard Actions**. Tap **Edit** to add or remove actions, drag to reorder them, move actions between groups, change the order of the groups, hide actions you never use, or delete symbols you've added. **Add Symbol…** makes a button that types a symbol or short text, like `@` or `->`. Everything else is in the Action Drawer on the left of the bar.
+Yes, in **Settings → Keyboard Actions**. Tap **Edit** to add or remove actions, drag to reorder them, move actions between groups, change the order of the groups, hide actions you never use, or delete symbols you've added. **On Keyboard** shows how many fit on your device. **Add Symbol…** makes a button that types a symbol or short text, like `@` or `->`. Tap **Checklist**, **Bullet List**, or **Divider** to choose its style. Everything else is in the Action Drawer on the left of the bar.
 
 ### Capturing
 
@@ -126,7 +139,11 @@ Yes, with **Extract Text** on the keyboard bar. Scan text straight into the note
 
 ### Can I add notes from other apps?
 
-Yes. Use the Share sheet in another app and choose *TXT to save text, links, images, or recordings, and pick which folder they go in.
+Yes. Use the Share sheet in another app and choose *TXT to save text, links, images, or recordings, and pick which folder they go in. Documents like PDFs can't be shared this way; bring them in with **Settings → Storage → Import Files or Folder…** instead.
+
+### Can I drag things into a note?
+
+Yes, on iPhone and iPad. Drag text, links, photos, recordings (from Voice Memos or Files), or files into a note, and they're added where you drop them, just like adding them with the paperclip. Pasting a copied photo or file works the same way. On an iPad, Split View or Slide Over makes this easiest.
 
 ### Importing and Exporting
 
@@ -162,11 +179,7 @@ Yes. Open **Library** from the ••• menu to browse, create, move, and delet
 
 ### I deleted a note by mistake
 
-Deleted notes stay in **Library → Recently Deleted** for 30 days. Restoring one also brings back its folder.
-
-### Why does my iCloud folder still say "Capture Something"?
-
-The folder was renamed to **asteriskTXT** in an update. iOS and macOS can keep showing the old name for a while; it updates on its own. Your notes are the same notes either way.
+Deleted notes stay in **Library → Recently Deleted** for 30 days. Tap one to restore it: *TXT asks first, then puts it back where it was (bringing back its folder too) and opens it.
 
 ### Does *TXT require an account?
 
@@ -176,7 +189,7 @@ No. There's no account to make. Your notes live in your own iCloud Drive or on y
 
 ### Is there an Apple Watch app?
 
-Yes. Tap the big **+** to dictate, scribble, or type a note. Choose where it goes in **iPhone Settings → Apple Watch → New Notes Go**: a new note, your pinned note, or ask every time. Your pinned note shows below the **+**, and you can tick its checklist items. Watch complications open *TXT to the **+** screen.
+Yes. Tap the big **+** to dictate, scribble, or type a note. Choose where it goes in **iPhone Settings → Apple Watch → New Notes Go**: **Create New**, **Prepend to Pinned** (at the top of your pinned note, under its title), **Append to Pinned** (at the end), or **Ask Every Time**. Your pinned note shows below the **+**, and you can tick its checklist items. Watch complications open *TXT to the **+** screen.
 
 ### Why does a note from my Watch take a moment to appear?
 
@@ -203,7 +216,11 @@ On the Mac:
 - **⌘⌥⌫** delete the note
 - **⌘⇧M** switch between rich text and plain text
 
-On the Mac you can also set a keyboard shortcut to show the *TXT window from anywhere, show it in the menu bar, hide it from the Dock, and open it at login, all in Settings.
+On the Mac you can also set a keyboard shortcut to show the *TXT window from anywhere, show it in the menu bar, hide it from the Dock, and open it at login, all in Settings. A function key on its own (like F6) works as the shortcut; if your keyboard's top row controls brightness and volume, hold **fn** while pressing it.
+
+### How does the Mac menu bar icon work?
+
+Click it to show or hide the *TXT window. Right-click (or Control-click) it for **Open Window**, **Open Settings**, and **Quit \*TXT**. Closing the window only puts it away: the menu bar icon, your shortcut, or the Dock brings back the same window, with your note just as you left it.
 
 ---
 
@@ -225,4 +242,4 @@ When reporting an issue, it helps to include:
 
 ## Privacy
 
-Curious about what data Due Something accesses and how it's handled? See our [Privacy Policy](https://asterisksomething.github.io/text-privacypolicy/).
+Curious about how *TXT handles your data? See our [Privacy Policy](https://asterisksomething.github.io/text-privacypolicy/).

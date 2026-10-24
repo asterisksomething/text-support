@@ -78,6 +78,8 @@ To type a literal `*` or `#` without it becoming formatting, put a backslash bef
 
 A note's title is its first line. To rename it, edit that line, or open **Note Info** and change **Title**. The file is renamed too, and links to the note keep working.
 
+Prefer to keep titles out of the way? Choose **Settings → Titles → Hide While Writing**. Notes then open without their title line, just like the pinned note, and you rename them in **Note Info**. A new note's first line stays in view while you type it, and is tucked away the next time you open the note.
+
 ### How do tags and links between notes work?
 
 - Type `#` and a word to tag a note, like `#work`. Use `/` for subtags: `#work/projects`.
@@ -85,7 +87,7 @@ A note's title is its first line. To rename it, edit that line, or open **Note I
 
 ### What is the pinned note?
 
-One note you always come back to, like a shopping list. It has its own push-pin button above your notes (bright while you're in it), is marked with a 📌 in search, and shows on your Apple Watch. Its title is hidden while you write so it can't be changed by accident; rename it in **Note Info**. Choose it in **Settings → Pinned Note**, where you can also choose what happens to its text when you save it as a new note: keep it, clear it, or ask every time.
+One note you always come back to, like a shopping list. It has its own push-pin button above your notes (bright while you're in it), is marked with a 📌 in search, and shows on your Apple Watch. Its title is always hidden while you write (on your Apple Watch too), so it can't be changed by accident; rename it in **Note Info**. Choose it in **Settings → Pinned Note**, where you can also choose what happens to its text when you save it as a new note: keep it, clear it, or ask every time.
 
 ### Can I use templates?
 
@@ -100,8 +102,22 @@ Yes. Add `#calc` to a note, or tap **Calculations** on the keyboard, and answers
 - Variables: `rate = $45`, then `rate × 30`. `total` adds up the lines above (back to a blank line or heading), `average` averages them, and `prev` uses the line above.
 - Units: `5 km in miles`, `72°F in °C`, `2 GB in MB`, `90 min in hours`.
 - Dates: `today + 3 weeks`, `next Friday`, `9am to 5:30pm`, `days until Dec 25`.
-- Currencies: `$100 in euros`, using the European Central Bank's daily rates for about 30 major currencies. This needs the internet about once a day.
+- Currencies: `$100 in euros`, using the European Central Bank's daily rates for about 30 major currencies (see _Where do exchange rates come from?_).
 - `//` starts a comment.
+
+### Where do exchange rates come from?
+
+From the European Central Bank's public reference rates, which it publishes once per working day for about 30 major currencies. *TXT downloads them only when a #calc note converts currencies, and checks for new ones once its copy is about a day old, so the first conversion needs the internet.
+
+Depending on when you use it, the rates may not be the most up to date:
+
+- The ECB publishes new rates once each working day, in the afternoon Central European Time, and not on weekends or its holidays. Until then, the latest rates are from the previous working day.
+- *TXT checks for new rates only after its copy is about a day old.
+- When you're offline, *TXT uses the last rates it downloaded.
+
+To see which day's rates an answer used, tap it (click it on the Mac): the menu shows "ECB rates from" and the date.
+
+The rates are reference rates, for information only. They aren't live market prices, and banks and card providers use their own rates and fees, so don't rely on them for payments, trading, or other financial decisions. *TXT isn't affiliated with or endorsed by the European Central Bank, and can't control when the rates are published or guarantee that they'll stay available or be accurate. If the ECB changes or stops its service, currency conversions may stop working until *TXT is updated.
 
 ### Can I change how notes look?
 
@@ -125,7 +141,7 @@ Yes. Tap **Dictate** on the keyboard bar, or ask Siri, and *TXT types what you s
 
 ### Can I add a voice memo?
 
-Yes. Tap the paperclip, then **Record Voice Memo** (or **Choose Audio** for a recording you already have). The memo appears in the note as a player. *TXT then asks whether to add a transcript of what's said: **Audio + Transcript** or **Audio Only**. Tap a memo's player for **Add Transcript Below** later. On the Mac, use **Note → Record Voice Memo…** or **Attach Audio…**.
+Yes. Tap the paperclip, then **Record Voice Memo**. Tap the red button to record, tap it again to pause, and tap the checkmark to add the memo to your note as a player (the X discards it). To add a recording you already have, choose **Choose Audio** instead; *TXT asks whether to add a transcript of what's said: **Audio + Transcript** or **Audio Only**. Tap a memo to play or pause it, and touch and hold it for **Add Transcript Below** at any time. On the Mac, use **Note → Record Voice Memo…** or **Attach Audio…**.
 
 You can also share a recording from the Voice Memos app: **Share → *TXT**.
 
@@ -133,9 +149,21 @@ You can also share a recording from the Voice Memos app: **Share → *TXT**.
 
 Transcripts use Apple's speech recognition. Check that Speech Recognition is allowed for *TXT in your device's Settings. If you've just started using it, your device may still be downloading the speech model for your language — try again in a few minutes. Recordings with no speech, or only music, have nothing to transcribe.
 
+### How do I open or delete an attachment?
+
+Tap a photo or file to open it full screen; tap a voice memo to play it. Touch and hold any attachment for its options, including **Delete**. Or put the cursor just after it and press Delete: the first press highlights it, the second removes it. Undo brings it back. On the Mac, click to open, and Control-click (or right-click) for the options.
+
+Removed an attachment by mistake? Open **Library → Recently Deleted → Attachments**. Attachments removed from notes stay there for 30 days; tap one to put it back at the end of its note.
+
+When you add a photo, file or recording, the cursor waits on a new line below it, so you can keep typing.
+
+### How do I change a photo's size?
+
+Touch and hold the photo (Control-click on the Mac), then choose **Preview**: **Full Width**, **50%**, or **25%** of the note's width, or **Filename** to show just its name. **Resize…** opens a slider from 10% to Full Width that snaps to 25%, 50% and Full Width, and shows the photo at its new size as you drag; tap the checkmark to keep it. A photo is never shown larger than it really is, so a small picture stays small even at Full Width. New photos start at Full Width; change that in **Settings → Attachment Views**.
+
 ### Can I get the text out of a photo or scan?
 
-Yes, with **Extract Text** on the keyboard bar. Scan text straight into the note with the camera, or take a photo, scan a document, or choose an image or file, then keep **Image + Text** or **Text Only**. You can also tap a picture that's already in a note for **Add Text Below** or **Replace with Text**. It all happens on your device, and handwriting works too.
+Yes, with **Extract Text** on the keyboard bar. Scan text straight into the note with the camera, or take a photo, scan a document, or choose an image or file, then keep **Image + Text** or **Text Only**. You can also touch and hold a picture that's already in a note for **Extract Text Below** or **Replace with Extracted Text**. It all happens on your device, and handwriting works too.
 
 ### Can I add notes from other apps?
 
@@ -163,7 +191,11 @@ Files that couldn't be imported are moved to the **Not Imported** folder, and **
 
 ### How do I export a note?
 
-Open the ••• menu and choose **Export**: Rich Text, Plain Text, PDF, HTML, or TaskPaper. If the note has attachments, you can include them in a zip.
+Open the ••• menu and choose **Export**: Rich Text, Plain Text, Markdown (.md), PDF, Word (.docx), HTML, TextBundle (.textpack), or TaskPaper. If the note has attachments, you can include them in a zip; a TextBundle always carries them inside. To send a note to another app, such as Apple Notes, Mail or Messages, choose **Export → Share…**; it sends the formatted note with its photos and attachments. To print a note, choose **Print** in the same menu (⌘P on Mac); it prints the same pages as the PDF. To choose which formats appear in Preview and under Export, or to hide Print, go to **Settings → Preview & Export**. Photos in exports keep the size you gave them in the note, as a share of the page's width; to have every photo fill the page instead, turn off **Use Photo Sizes from Notes** there.
+
+### Can previews be dark?
+
+Yes. **Settings → Preview & Export → Background** chooses **Match App** (white in light mode, black in dark mode), **White**, or **Black**. It changes only how previews look; exported and shared files always have white pages with black text.
 
 ### Notes, Files, and iCloud
 
@@ -181,6 +213,12 @@ Yes. Open **Library** from the ••• menu to browse, create, move, and delet
 
 Deleted notes stay in **Library → Recently Deleted** for 30 days. Tap one to restore it: *TXT asks first, then puts it back where it was (bringing back its folder too) and opens it.
 
+### Why is the ••• button a red !?
+
+Something is waiting in **Library → Recovered Notes**. When a change can't be saved to its note — for example, the note changed on another device while you were typing — *TXT keeps your version as a separate recovered note, so nothing is lost. **Settings → Notes Library** shows a red mark too. Opening the Library puts the ••• back.
+
+Tap a recovered note to read it. Its ••• menu can make it a **New Note**, **Open Original**, **Append to Original** (adds it at the end of the original note), **Show in Files**, or **Delete** it. Recovered notes don't appear in All Notes, search, or widgets.
+
 ### Does *TXT require an account?
 
 No. There's no account to make. Your notes live in your own iCloud Drive or on your device.
@@ -197,11 +235,11 @@ The Watch can't reach iCloud Drive itself, so it sends what you write to your iP
 
 ### How do I use widgets and Control Center?
 
-On the Home Screen, add **New Note**, **Recent Notes**, or **Selected Note** (a note you choose, kept close by). On the Lock Screen, add **Dictate Note** or **Pinned Note** — the Pinned Note widget opens it without showing its contents. In Control Center, add **Open *TXT** or **Dictate Note**.
+On the Home Screen, add **New Note**, **Recent Notes**, or **Selected Note** (a note you choose, kept close by). On the Lock Screen, add **Dictate Note** or **Pinned Note** — the Pinned Note widget opens it without showing its contents. In Control Center, add **New Note** (opens *TXT to a new note) or **Dictate Note** (opens a new note and starts listening).
 
 ### Does *TXT work with Siri and Shortcuts?
 
-Yes. Ask Siri to "create a note in asterisk text," "add to my pinned note in asterisk text," or "find notes in asterisk text." The Shortcuts app has actions to create notes (with text, links, or files), add to your pinned note, find notes, dictate, and open *TXT.
+Yes. Ask Siri to "create a note in asterisk text," "add to my pinned note in asterisk text," "add to the top of my pinned note in asterisk text," or "find notes in asterisk text." The Shortcuts app has actions to create notes (with text, links, or files), append or prepend to any note or your pinned note (prepending adds at the top, under the title), find notes, dictate, and open *TXT.
 
 ### Does *TXT have keyboard shortcuts?
 

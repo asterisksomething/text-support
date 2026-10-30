@@ -65,13 +65,14 @@ Yes. Your notes appear in Spotlight automatically. To hide them, turn off *TXT i
 
 ### What can I write in a note?
 
-Notes are Markdown, shown as rich text while you write. Headings, **bold**, *italic*, __underline__, checklists, bullet and numbered lists, tables, dividers, links and pictures all work. Use **Plain Text** in the ••• menu to see and edit the Markdown itself.
+Notes are Markdown, shown as rich text while you write. Headings, **bold**, *italic*, __underline__, ~~strikethrough~~, checklists, bullet and numbered lists, blockquotes, code blocks, tables, dividers, links and pictures all work. Keyboard actions add the newest ones: **Strikethrough** wraps the selection in `~~`, **Blockquote** starts the line (or each selected line) with `>`, and **Code Block** fences the selected lines, or starts an empty block, with three backticks. Tap **Plain Text / Rich Text** in the bar above the keyboard (the first button) to see and edit the Markdown itself, and again to switch back. On a Mac, choose **Note → Show Plain Text** (⇧⌘M).
 
 To type a literal `*` or `#` without it becoming formatting, put a backslash before it (`\*`).
 
 ### How do indents and dividers work?
 
 - **Indent** and **Outdent** (in the keyboard bar's Action Drawer, under Lists) move a line in or out by a tab. One backspace removes an indent. How far a tab goes is set by **Tab Width** (see _Can I change how notes look?_). Indented lists become nested lists.
+- Press Return in a list, at any indent, and the next line continues the list at that indent, numbering and lettering included. Press Return on an empty item to step out a level; on an empty item that isn't indented, Return ends the list.
 - **Divider** adds a line across the note. Choose its look in **Settings → Keyboard Actions → Divider**: **Line** (`---`), **Light Line** (`___`), or **Dotted** (`***`). All three are standard Markdown, so other apps show them as dividers too.
 
 ### How do I rename a note?
@@ -121,7 +122,7 @@ The rates are reference rates, for information only. They aren't live market pri
 
 ### Can I change how notes look?
 
-Yes. **Settings → Fonts & Themes** has fonts, text size, paper styles (Plain, Dots, Graph, Ruled), and:
+Yes. **Settings → Fonts & Layout** has fonts, text size, paper styles (Plain, Dots, Graph, Ruled), and:
 
 - **Line Spacing**: Standard, or up to double (+20%, +40%, +60%, +80%, 2×).
 - **Tab Width**: Half, Standard, x1.5, or Double. It's also how far **Indent** moves a line.
@@ -131,7 +132,15 @@ The preview at the top shows each change before you save it. **Appearance**, **A
 
 ### Can I change the buttons above the keyboard?
 
-Yes, in **Settings → Keyboard Actions**. Tap **Edit** to add or remove actions, drag to reorder them, move actions between groups, change the order of the groups, hide actions you never use, or delete symbols you've added. **On Keyboard** shows how many fit on your device. **Add Symbol…** makes a button that types a symbol or short text, like `@` or `->`. Tap **Checklist**, **Bullet List**, or **Divider** to choose its style. Everything else is in the Action Drawer on the left of the bar.
+Yes, in **Settings → Keyboard Actions**. Tap **Edit** to add or remove actions, drag to reorder them, move actions between groups, change the order of the groups, hide actions you never use, or delete symbols you've added. **On Keyboard** shows how many fit on your device. **Add Symbol…** makes a button that types a symbol or short text, like `@` or `->`. Tap **Checklist**, **Bullet List**, **Numbered List**, **Code Block**, or **Divider** to choose its style. Everything else is in the Action Drawer on the left of the bar.
+
+### Can I use a different list style just this once?
+
+Yes. Touch and hold **Checklist**, **Bullet List**, **Numbered List**, **Code Block**, or **Divider** on the keyboard bar (click and hold on the Mac) and pick a style. A list you're in changes to that style, and a divider or code block is added in it; your default in **Settings → Keyboard Actions** stays as it is. A tap still uses the default. Actions in the Action Drawer always use the default.
+
+- **Numbered List**: `1.`, `1)`, `a.`, `A.`, or Roman numerals (`i.`).
+- **Code Block**: three backticks (```` ``` ````, the default) or three tildes (`~~~`).
+
 
 ### Capturing
 
@@ -167,11 +176,11 @@ Yes, with **Extract Text** on the keyboard bar. Scan text straight into the note
 
 ### Can I add notes from other apps?
 
-Yes. Use the Share sheet in another app and choose *TXT to save text, links, images, or recordings, and pick which folder they go in. Documents like PDFs can't be shared this way; bring them in with **Settings → Storage → Import Files or Folder…** instead.
+Yes. Use the Share sheet in another app and choose *TXT to save text, links, images, or recordings, and pick which folder they go in. When an app sends pictures along with a link (the App Store can include the app's picture), *TXT saves just the link; turn on **Add Picture** to keep them too. A shared link shows as a small preview card, while a link you type or paste stays a link you can tap; touch and hold any link (Control-click on the Mac) and choose **Preview** to change it. Documents like PDFs can't be shared this way; bring them in with **Settings → Storage → Import Files or Folder…** instead.
 
 ### Can I drag things into a note?
 
-Yes, on iPhone and iPad. Drag text, links, photos, recordings (from Voice Memos or Files), or files into a note, and they're added where you drop them, just like adding them with the paperclip. Pasting a copied photo or file works the same way. On an iPad, Split View or Slide Over makes this easiest.
+Yes. Drag text, links, photos, recordings (from Voice Memos or Files), or files into a note, and they're added where you drop them, just like adding them with the paperclip. Pasting a copied photo or file works the same way. On an iPad, Split View or Slide Over makes this easiest. On the Mac, drag from Finder, Photos, Voice Memos, Mail or a web page, or paste a screenshot or a file copied in Finder. A plain-text or Markdown file adds its text; to bring in a whole folder, use **Settings → Storage → Import Files or Folder…**.
 
 ### Importing and Exporting
 
@@ -187,11 +196,11 @@ Into **Notes → Imported**. A folder, zip, or export gets its own folder there,
 
 ### Something didn't import. What now?
 
-Files that couldn't be imported are moved to the **Not Imported** folder, and **Settings → Storage → Errors** lists each one with the reason. **Show in Files** (or **Show in Finder** on the Mac) takes you to it. **Clear Errors** clears the list but doesn't delete any files. Importing the exact same file again is skipped and listed as "Already imported."
+Files that couldn't be imported are moved to the **Not Imported** folder, and **Settings → Storage → Errors** lists each one with the reason. Tap an error to **Try Again**, **Show in Files** (or **Show in Finder** on the Mac), or **Clear**, which doesn't delete the file. Storage problems, such as iCloud Drive not opening or a note that can't be read, are listed there too, with **Try Again**, **Open Settings** or **Import as Note** where they help. **Clear** (or **Clear All**, below the list) removes an error from the list without fixing it; it's listed again if it happens again. Importing the exact same file again is skipped and listed as "Already imported."
 
 ### How do I export a note?
 
-Open the ••• menu and choose **Export**: Rich Text, Plain Text, Markdown (.md), PDF, Word (.docx), HTML, TextBundle (.textpack), or TaskPaper. If the note has attachments, you can include them in a zip; a TextBundle always carries them inside. To send a note to another app, such as Apple Notes, Mail or Messages, choose **Export → Share…**; it sends the formatted note with its photos and attachments. To print a note, choose **Print** in the same menu (⌘P on Mac); it prints the same pages as the PDF. To choose which formats appear in Preview and under Export, or to hide Print, go to **Settings → Preview & Export**. Photos in exports keep the size you gave them in the note, as a share of the page's width; to have every photo fill the page instead, turn off **Use Photo Sizes from Notes** there.
+Open the ••• menu and choose **Export**: Rich Text, Plain Text, Markdown (.md), PDF, Word (.docx), HTML, TextBundle (.textpack), or TaskPaper. If the note has attachments, you can include them in a zip; a TextBundle always carries them inside. To send a note to another app, such as Apple Notes, Mail or Messages, choose **Export → Share…**; it sends the formatted note with its photos and attachments. To print a note, choose **Export → Print** (⌘P on Mac); it prints the same pages as the PDF. To choose which formats appear in Preview and under Export, or to hide Print, go to **Settings → Preview & Export**. Photos in exports keep the size you gave them in the note, as a share of the page's width; to have every photo fill the page instead, turn off **Use Photo Sizes from Notes** there.
 
 ### Can previews be dark?
 
@@ -213,9 +222,18 @@ Yes. Open **Library** from the ••• menu to browse, create, move, and delet
 
 Deleted notes stay in **Library → Recently Deleted** for 30 days. Tap one to restore it: *TXT asks first, then puts it back where it was (bringing back its folder too) and opens it.
 
-### Why is the ••• button a red !?
+### What happens if I edit a note on two devices at once?
 
-Something is waiting in **Library → Recovered Notes**. When a change can't be saved to its note — for example, the note changed on another device while you were typing — *TXT keeps your version as a separate recovered note, so nothing is lost. **Settings → Notes Library** shows a red mark too. Opening the Library puts the ••• back.
+*TXT combines the changes, line by line, so both sets of edits end up in the note, even when one device was working on a copy that was out of date. Lines both devices added in the same place are all kept. A copy of both versions is kept for 30 days in a hidden folder in your library, in case the combined note ever needs correcting. To tell where both devices' versions started, each device also keeps the recent versions of its notes, up to 50 MB; **Settings → Storage → Note Versions** shows how much they take, and they never leave the device.
+
+When you open a note, or come back to *TXT, it checks whether iCloud has a newer version of that note. While one is downloading, *TXT waits a few seconds before saving your typing, so it can combine the two; you can type straight away. **Note Info** shows **iCloud Updating…** with a down arrow while a note downloads, and an up arrow while your changes upload.
+
+Only when both devices changed the same lines differently does *TXT keep your version as a separate recovered note (see below).
+
+### Why is the ••• button red?
+
+- **A red file icon** means something is waiting in **Library → Recovered Notes**. When a change can't be saved to its note — for example, the same lines changed on another device while you were typing — *TXT keeps your version as a separate recovered note, so nothing is lost. **Settings → Notes Library** shows a red file icon too. Tap the button to open the Library; that puts the ••• back. Each recovered note there shows why it was kept and when.
+- **A red !** means a storage problem, such as a note file that can't be read or a file that couldn't be imported. Tap it to open **Settings → Storage**, where each one is listed with what can fix it (see _Something didn't import. What now?_).
 
 Tap a recovered note to read it. Its ••• menu can make it a **New Note**, **Open Original**, **Append to Original** (adds it at the end of the original note), **Show in Files**, or **Delete** it. Recovered notes don't appear in All Notes, search, or widgets.
 

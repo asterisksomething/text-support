@@ -55,11 +55,13 @@ Type in **Search or Create**. Results appear as you type, across titles, text, t
 - `#work` or `tag:work` finds a tag and its subtags.
 - `folder:Recipes` or `folder:"Work Projects"` searches a folder and its subfolders.
 
+Encrypted notes are found by their title only, marked with a lock (see _Can I lock a note?_).
+
 To find something inside the note you're reading, use the search button in the keyboard bar's Action Drawer.
 
 ### Can I find notes with Spotlight?
 
-Yes. Your notes appear in Spotlight automatically. To hide them, turn off *TXT in your device's search settings (on iPhone and iPad, Settings ▸ Apps ▸ *TXT ▸ Search).
+Yes. Your notes appear in Spotlight automatically, except encrypted ones. To hide them, turn off *TXT in your device's search settings (on iPhone and iPad, Settings ▸ Apps ▸ *TXT ▸ Search).
 
 ### Writing
 
@@ -88,7 +90,7 @@ Prefer to keep titles out of the way? Choose **Settings → Titles → Hide Whil
 
 ### What is the pinned note?
 
-One note you always come back to, like a shopping list. It has its own push-pin button above your notes (bright while you're in it), is marked with a 📌 in search, and shows on your Apple Watch. Its title is always hidden while you write (on your Apple Watch too), so it can't be changed by accident; rename it in **Note Info**. Choose it in **Settings → Pinned Note**, where you can also choose what happens to its text when you save it as a new note: keep it, clear it, or ask every time.
+One note you always come back to, like a shopping list. It has its own button above your notes (bright while you're in it), is marked with the same icon in search, and shows on your Apple Watch. The icon is an asterisk; choose a push pin, star, bookmark, flag, heart, bolt, or light bulb instead in **Settings → Pinned Note → Icon**. Its title is always hidden while you write (on your Apple Watch too), so it can't be changed by accident; rename it in **Note Info**. Choose it in **Settings → Pinned Note**, where you can also choose what happens to its text when you save it as a new note: keep it, clear it, or ask every time.
 
 ### Can I use templates?
 
@@ -206,6 +208,35 @@ Open the ••• menu and choose **Export**: Rich Text, Plain Text, Markdown (
 
 Yes. **Settings → Preview & Export → Background** chooses **Match App** (white in light mode, black in dark mode), **White**, or **Black**. It changes only how previews look; exported and shared files always have white pages with black text.
 
+### Encrypted Notes
+
+### Can I lock a note?
+
+Yes, by encrypting it. Open **Note Info**, turn on **Encrypt Note**, and tap the checkmark. The first time, you create a **notes password** of at least 8 characters. Any note can be encrypted except your pinned note.
+
+A locked note shows only asterisks, and the ••• button becomes a lock. Tap the lock to unlock it with Face ID (Touch ID or your passcode on devices without it), or with your notes password. Once it's unlocked, you write in it as usual, and it's saved encrypted, attachments too. To lock it again, choose **Lock Now** at the top of the ••• menu.
+
+**Settings → Encrypted Notes** lets you choose:
+
+- **Use Face ID** (or Touch ID), or your notes password every time.
+- **Unlock**: each note separately, or all of them at once.
+- **Lock After**: leaving the note, leaving the app, 5 minutes, or 15 minutes.
+- **Hide Text With**: asterisks, redaction bars, or blur.
+- **Show Titles**: whether encrypted notes show their titles in search and can be found by them.
+- **Change Password**, **Lock Now**, and **Remove Encryption from All Notes**.
+
+Encrypted notes are listed in **Library → Encrypted**. They're left out of Spotlight, widgets, and Siri and Shortcuts; anything you send to one from the share sheet or Siri becomes a new note. To make a note readable again, turn off **Encrypt Note** in its Note Info.
+
+### What can other apps see of an encrypted note?
+
+Only its title. It's still a .txt file, with the title on the first line, then a line saying the note is encrypted, then the encrypted text. Opening it in Files, Finder, another app, or iCloud.com shows just that: open it in *TXT to read it. Its file name is still the note's title, and its attachments are encrypted too, in a hidden folder in your library.
+
+Copies made before you encrypted the note, like a backup or a recovered version, aren't changed.
+
+### I forgot my notes password
+
+Devices that unlock your notes with Face ID or Touch ID can still open them, because the key is in your iCloud Keychain, and you can turn encryption off there to keep them readable. But the password can't be recovered or reset: **Change Password** asks for the current one. If you forget it and the key isn't in your iCloud Keychain, your encrypted notes can't be opened by anyone, including us. Keep your notes password somewhere safe, like the Passwords app.
+
 ### Notes, Files, and iCloud
 
 ### Where are my notes stored?
@@ -217,6 +248,10 @@ To see a note's file, open **Note Info** and choose **Show in Files**. On the Ma
 ### Can I organize notes into folders?
 
 Yes. Open **Library** from the ••• menu to browse, create, move, and delete folders and notes. **Settings → Storage → New Notes In** chooses where new notes go. You can also move a note from **Note Info → Move To**, or move files in Files or Finder.
+
+### Can I keep favorite notes and folders handy?
+
+Yes. In **Library → All Notes**, tap **Edit**, select notes or folders, and tap **Favorite**. For the note you're in, turn on **Favorite** in **Note Info**. They're listed in **Library → Favorites**, and sync to your other devices.
 
 ### I deleted a note by mistake
 
@@ -235,7 +270,7 @@ Only when both devices changed the same lines differently does *TXT keep your ve
 - **A red file icon** means something is waiting in **Library → Recovered Notes**. When a change can't be saved to its note — for example, the same lines changed on another device while you were typing — *TXT keeps your version as a separate recovered note, so nothing is lost. **Settings → Notes Library** shows a red file icon too. Tap the button to open the Library; that puts the ••• back. Each recovered note there shows why it was kept and when.
 - **A red !** means a storage problem, such as a note file that can't be read or a file that couldn't be imported. Tap it to open **Settings → Storage**, where each one is listed with what can fix it (see _Something didn't import. What now?_).
 
-Tap a recovered note to read it. Its ••• menu can make it a **New Note**, **Open Original**, **Append to Original** (adds it at the end of the original note), **Show in Files**, or **Delete** it. Recovered notes don't appear in All Notes, search, or widgets.
+Tap a recovered note to read it. Its ••• menu can make it a **New Note**, **Open Original**, **Append to Original** (adds it at the end of the original note; not for encrypted notes), **Show in Files**, or **Delete** it. Recovered notes don't appear in All Notes, search, or widgets.
 
 ### Does *TXT require an account?
 
@@ -253,7 +288,7 @@ The Watch can't reach iCloud Drive itself, so it sends what you write to your iP
 
 ### How do I use widgets and Control Center?
 
-On the Home Screen, add **New Note**, **Recent Notes**, or **Selected Note** (a note you choose, kept close by). On the Lock Screen, add **Dictate Note** or **Pinned Note** — the Pinned Note widget opens it without showing its contents. In Control Center, add **New Note** (opens *TXT to a new note) or **Dictate Note** (opens a new note and starts listening).
+On the Home Screen, add **New Note**, **Recent Notes**, or **Selected Note** (a note you choose, kept close by). On the Lock Screen, add **Dictate Note** or **Pinned Note** — the Pinned Note widget opens it without showing its contents. In Control Center, add **New Note** (opens *TXT to a new note) or **Dictate Note** (opens a new note and starts listening). Encrypted notes never appear in widgets.
 
 ### Does *TXT work with Siri and Shortcuts?
 
